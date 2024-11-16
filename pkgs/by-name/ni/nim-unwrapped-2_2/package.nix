@@ -108,7 +108,8 @@ stdenv.mkDerivation (finalAttrs: {
     ./nixbuild.patch
     # Load libraries at runtime by absolute path
 
-    ./extra-mangling-2.patch
+    # ./extra-mangling-2.patch
+    # broke localPassC
     # Mangle store paths of modules to prevent runtime dependence.
 
     ./openssl.patch
